@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.outer {
+  position: relative;
+  display: block;
+  height: 96vh;
+  width: 96vw;
+
+  box-sizing: border-box;
+  overflow: hidden;
+  /* padding: 10px;
+  margin: 10px; */
+}
+
+.inner-left {
+  margin: 10px 0px 10px 0px;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 60%;
+  background-color: #fcc60c;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.inner-left .logo {
+  position: absolute;
+  top: 20px;
+  left: 51px;
+  max-width: 300px; /* scale down */
+  max-height: 100px;
+  /* filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3)); */
+  /* background: transparent; */
+  color: #fcc60c;
+  mix-blend-mode: multiply;
+}
+.inner-left-p-bold {
+  position: absolute;
+  font-weight: bold;
+  top: 32%;
+  left: 18%;
+}
+h1 {
+  position: absolute;
+  font-size: 100px;
+  font-weight: 700;
+  top: 36%;
+  left: 17%;
+  max-width: 200px;
+}
+.sub-heading {
+  position: absolute;
+  top: 56%;
+  left: 18%;
+  width: 80%; /* restricts line length */
+  max-width: 600px; /* optional: cap width */
+  line-height: 1.4; /* spacing between lines */
+  font-weight: lighter;
+  overflow-wrap: break-word; /* breaks long words */
+  white-space: normal;
+  max-width: 460px;
+}
+
+hr {
+  position: absolute;
+  display: inline-block;
+  bottom: 11%;
+  left: 18%;
+  border: none;
+  height: 4px;
+  background-color: #333;
+  width: 30px; /* Controls the width */
+}
+
+.date {
+  position: absolute;
+  font-weight: bold;
+  bottom: 10%;
+  left: 22%;
+}
+.Pikachu-logo {
+  position: absolute;
+  height: 440px;
+  width: 434px;
+  top: 50%;
+  right: 15%;
+  max-width: 450px;
+  max-height: 500px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  mix-blend-mode: multiply;
+}
+
+.inner-right {
+  margin: 10px 0px 10px 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40%;
+  background-color: #fbe8b5;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+svg {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  max-width: 150px;
+  max-height: 50px;
+}
+.dots-yellow {
+  height: 242px;
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  width: 75px;
+  max-width: 251px;
+  max-height: 116px;
+}
+.black-dot {
+  height: 168px;
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  width: 75px;
+  max-width: 172px;
+  max-height: 22px;
+}
